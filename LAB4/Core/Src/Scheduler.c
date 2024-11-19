@@ -7,6 +7,7 @@
 
 #include "Scheduler.h"
 
+
 sTasks	SCH_tasks_G[SCH_MAX_TASKS];
 
 uint8_t  current_index_task = 0;
@@ -28,6 +29,7 @@ void SCH_Add_Task(void (*pFunction)(), uint32_t DELAY, uint32_t PERIOD){
 
 
 void SCH_Update(void){
+	button_reading();
 	for(int i = 0; i < current_index_task; i++){
 		if(SCH_tasks_G[i].Delay > 0){
 			SCH_tasks_G[i].Delay--;

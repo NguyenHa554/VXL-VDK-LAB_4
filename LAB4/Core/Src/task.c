@@ -18,3 +18,13 @@ void Led2(){
 void Led3(){
 		HAL_GPIO_TogglePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin);
 	}
+
+void Led4(){
+		HAL_GPIO_TogglePin(LED4_GPIO_Port, LED4_Pin);
+	}
+
+void ButtonLed(){
+	if(isButtonPressed() == 1){
+			  HAL_GPIO_TogglePin(RED2_GPIO_Port, RED2_Pin);
+		  }
+}

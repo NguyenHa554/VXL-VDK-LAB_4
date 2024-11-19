@@ -1,0 +1,2 @@
+button.c:19:5:isButtonPressed	4	static
+button.c:29:6:button_reading	8	static

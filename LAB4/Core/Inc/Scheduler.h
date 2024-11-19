@@ -9,6 +9,7 @@
 #define INC_SCHEDULER_H_
 
 #include <stdint.h>
+#include "button.h"
 
 typedef struct{
 	void (*pTask)(void);
