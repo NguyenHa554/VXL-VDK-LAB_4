@@ -10,6 +10,8 @@
 
 #include "main.h"
 
-void test();
+void Led1();
+void Led2();
+void Led3();
 
 #endif /* INC_TASK_H_ */

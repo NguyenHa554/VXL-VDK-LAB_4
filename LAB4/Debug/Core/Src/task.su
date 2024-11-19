@@ -1,1 +1,3 @@
-task.c:10:6:test	8	static
+task.c:10:6:Led1	8	static
+task.c:14:6:Led2	8	static
+task.c:18:6:Led3	8	static

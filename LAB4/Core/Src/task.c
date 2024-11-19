@@ -7,7 +7,14 @@
 
 #include "task.h"
 
-void test(){
+void Led1(){
 		HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
 	}
 
+void Led2(){
+		HAL_GPIO_TogglePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin);
+	}
+
+void Led3(){
+		HAL_GPIO_TogglePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin);
+	}

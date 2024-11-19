@@ -22,6 +22,7 @@ typedef struct{
 
 #define SCH_MAX_TASKS 	40
 
+#define TICK 	10
 
 void SCH_Init(void);
 
@@ -30,5 +31,8 @@ void SCH_Add_Task(void (*pFunction)(), uint32_t DELAY, uint32_t PERIOD);
 void SCH_Update(void);
 
 void SCH_Dispatch_Tasks(void);
+
+void SCH_Delete(uint32_t ID);
+
 
 #endif /* INC_SCHEDULER_H_ */
